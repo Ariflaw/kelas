@@ -28,12 +28,32 @@
    .navbar-header{
 
       .navbar-brand{
+         position: relative;
          font-family: $font-brand;
          color: $white;
          // font-weight: 700;
          font-size: 3.2rem;
          font-style: italic;
+         letter-spacing: 3px;
+
+         span{
+            color: $brand_dot;
+         }
+
+         &::after{
+            content: '';
+            position: absolute;
+            left: 15px;
+            bottom: 0;
+            width: 30%;
+            height: 3px;
+            background-color: $white;
+            border-radius: 5px;
+         }
+         
       }
+
+
    }
 
    /* Navbar Style
@@ -53,7 +73,7 @@
             background: transparent;
             outline: 0;
 
-            &::before{
+            &::before, &::after{
                width: 80%;
             }
          }
@@ -96,8 +116,11 @@
 
       &-des{
          margin: 0;
+         padding-top: 5px;
          font-family: $font-brand;
          font-style: italic;
+         opacity: 0.75;
+         letter-spacing: 1px;
       }
 
    }

@@ -1,9 +1,15 @@
 // ========================================================================
-// Import Component
+// Main Content
 // ======================================================================== /
-@import "variable";
-@import "bootstrap";
+#main-content{
 
-@import "global";
-@import "header";
-@import "content";
+}
+
+
+main{
+   @include make-md-column(8);
+}
+
+aside{
+   @include make-md-column(4);
+}
