@@ -50,7 +50,7 @@
             background-color: $white;
             border-radius: 5px;
          }
-         
+
       }
 
 
@@ -62,6 +62,7 @@
 
       a{
          color: $white;
+         opacity: 0.8;
          text-transform: uppercase;
          font-weight: 700;
          letter-spacing: 0.5px;
@@ -72,6 +73,7 @@
          &:hover, &:active, &:focus{
             background: transparent;
             outline: 0;
+            opacity: 1;
 
             &::before, &::after{
                width: 80%;

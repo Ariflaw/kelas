@@ -2,13 +2,94 @@
 // Main Content
 // ======================================================================== /
 #main-content{
-
+   margin-top: 60px;
 }
 
 
 main{
    @include make-md-column(8);
-}
+   overflow: hidden;
+
+   img{
+      max-width: 100%;
+   }
+
+   .posts-list{
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #DCDCDC;
+      @include clearfix;
+
+      .content-post{
+         padding: 20px 0;
+         @include clearfix;
+      }
+
+      .content-date{
+         position: relative;
+         float: left;
+         width: 80px;
+         padding-right: 20px;
+         font-size: 2.6rem;
+         line-height: 18px;
+         text-align: right;
+         color: $color-7;
+
+         &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 180%;
+            top: 0;
+            right: 0;
+            background-color: #ddd;
+         }
+      }
+
+      .content-body{
+         float: left;
+         // width: 90%;
+         width: calc(100% - 80px);
+         padding: 0 20px;
+
+         h3{
+            margin: 0 0 5px;
+            padding: 0;
+         }
+
+         .meta-info{
+            color: $color-content;
+
+            .fn, .cat-link{
+               text-transform: uppercase;
+               color: $color-7;
+               font-weight: 700;
+            }
+         }
+
+         .content-body-except{
+            margin-top: 20px;
+            color: $color-content;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            letter-spacing: 1px;
+         }
+
+         .readmore{
+            display: inline-block;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $white;
+            background-color: $primary;
+            padding: 10px 20px;
+            margin-top: 10px;
+         }
+
+      }
+   }
+
+}// end main
 
 aside{
    @include make-md-column(4);
