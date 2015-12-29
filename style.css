@@ -5962,14 +5962,35 @@ main {
       main .posts-list .content-body .readmore {
         display: inline-block;
         border-radius: 50px;
-        text-transform: uppercase;
+        font-size: 1.3rem;
         font-weight: 700;
+        text-transform: uppercase;
         color: #FFFFFF;
         background-color: #28C8D6;
-        padding: 10px 20px;
+        padding: 12px 25px;
         margin-top: 10px; }
         main .posts-list .content-body .readmore:hover, main .posts-list .content-body .readmore:focus, main .posts-list .content-body .readmore:active {
           text-decoration: none; }
+  main .pagination li {
+    display: inline-block;
+    margin-right: 5px; }
+    main .pagination li.active a, main .pagination li a {
+      font-weight: 700;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      main .pagination li.active a:hover, main .pagination li.active a:active, main .pagination li.active a:focus, main .pagination li a:hover, main .pagination li a:active, main .pagination li a:focus {
+        background-color: #28C8D6;
+        border-color: #28C8D6; }
+    main .pagination li.active a {
+      background-color: #28C8D6;
+      border-color: #28C8D6;
+      border-radius: 3px; }
+    main .pagination li a {
+      color: #777777;
+      border-radius: 3px; }
+      main .pagination li a:hover, main .pagination li a:active, main .pagination li a:focus {
+        color: #FFFFFF; }
 
 aside {
   position: relative;
@@ -5980,6 +6001,13 @@ aside {
     aside {
       float: left;
       width: 33.33333%; } }
+
+#main-sidebar .widget_search .search-field {
+  border: 1px solid #777777;
+  padding: 15px;
+  width: 100%; }
+  #main-sidebar .widget_search .search-field:hover, #main-sidebar .widget_search .search-field:active, #main-sidebar .widget_search .search-field:focus {
+    outline: 0; }
 
 /* ----------------------------------------------------------------------------
  * Footer Styling
