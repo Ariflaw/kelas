@@ -5968,6 +5968,8 @@ main {
         background-color: #28C8D6;
         padding: 10px 20px;
         margin-top: 10px; }
+        main .posts-list .content-body .readmore:hover, main .posts-list .content-body .readmore:focus, main .posts-list .content-body .readmore:active {
+          text-decoration: none; }
 
 aside {
   position: relative;
