@@ -3,24 +3,103 @@
 // ======================================================================== /
 #main-sidebar {
 
+   .widget {
+      margin-bottom: 30px;
+   }
+
+   .widget-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $color-3;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid $color-d;
+   }
+
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+
    // Widget Search
    // ======================================================================== /
    .widget_search {
+      position: relative;
 
       .search-field {
-         border: 1px solid $color-7;
+         border: 1px solid $color-e;
          padding: 15px;
          width: 100%;
 
          &:hover, &:active, &:focus {
             outline: 0;
+            border-color: $primary;
+         }
+      }
+
+      .fa-search {
+         position: absolute;
+         right: 20px;
+         top: 18px;
+         color: $color-7;
+      }
+
+   }
+
+   // Widget Categories
+   // ======================================================================== /
+   .widget_categories {
+
+      ul {
+
+         li {
+            padding: 8px 8px 8px 0;
+
+            a {
+               color: $color-7;
+               font-size: 1.3rem;
+
+               &:hover, &:focus, &:active {
+                  color: $primary;
+               }
+            }
          }
       }
 
    }
 
-}
+   // Widget Recent Posts
+   // ======================================================================== /
+   .widget_recent_post {
 
-.widget {
+      ul{
+
+         li {
+            margin-bottom: 15px;
+
+            img{
+               width: 100px;
+               float: left;
+               margin-right: 10px;
+            }
+
+            h4 {
+               font-weight: 600;
+               margin-bottom: 5px;
+            }
+
+            time {
+               font-size: 1.3rem;
+               color: $color-7;
+            }
+         }
+
+      }
+
+   }
 
 }

@@ -6002,12 +6002,55 @@ aside {
       float: left;
       width: 33.33333%; } }
 
-#main-sidebar .widget_search .search-field {
-  border: 1px solid #777777;
-  padding: 15px;
-  width: 100%; }
-  #main-sidebar .widget_search .search-field:hover, #main-sidebar .widget_search .search-field:active, #main-sidebar .widget_search .search-field:focus {
-    outline: 0; }
+#main-sidebar .widget {
+  margin-bottom: 30px; }
+#main-sidebar .widget-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DDDDDD; }
+#main-sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+#main-sidebar .widget_search {
+  position: relative; }
+  #main-sidebar .widget_search .search-field {
+    border: 1px solid #EEEEEE;
+    padding: 15px;
+    width: 100%; }
+    #main-sidebar .widget_search .search-field:hover, #main-sidebar .widget_search .search-field:active, #main-sidebar .widget_search .search-field:focus {
+      outline: 0;
+      border-color: #28C8D6; }
+  #main-sidebar .widget_search .fa-search {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    color: #777777; }
+#main-sidebar .widget_categories ul li {
+  padding: 8px 8px 8px 0; }
+  #main-sidebar .widget_categories ul li a {
+    color: #777777;
+    font-size: 1.3rem; }
+    #main-sidebar .widget_categories ul li a:hover, #main-sidebar .widget_categories ul li a:focus, #main-sidebar .widget_categories ul li a:active {
+      color: #28C8D6; }
+#main-sidebar .widget_recent_post ul li {
+  margin-bottom: 15px; }
+  #main-sidebar .widget_recent_post ul li img {
+    width: 100px;
+    float: left;
+    margin-right: 10px; }
+  #main-sidebar .widget_recent_post ul li h4 {
+    font-weight: 600;
+    margin-bottom: 5px; }
+  #main-sidebar .widget_recent_post ul li time {
+    font-size: 1.3rem;
+    color: #777777; }
 
 /* ----------------------------------------------------------------------------
  * Footer Styling
