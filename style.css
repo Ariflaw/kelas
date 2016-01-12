@@ -6051,6 +6051,9 @@ aside {
   #main-sidebar .widget_recent_post ul li time {
     font-size: 1.3rem;
     color: #777777; }
+#main-sidebar .widget_recent_comments ul li img {
+  width: 80px;
+  height: auto; }
 
 /* ----------------------------------------------------------------------------
  * Footer Styling
