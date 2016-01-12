@@ -6051,16 +6051,65 @@ aside {
   #main-sidebar .widget_recent_post ul li time {
     font-size: 1.3rem;
     color: #777777; }
-#main-sidebar .widget_recent_comments ul li img {
-  width: 80px;
-  height: auto; }
+#main-sidebar .widget_recent_comments ul li {
+  display: block;
+  margin-bottom: 25px; }
+  #main-sidebar .widget_recent_comments ul li img {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 100%; }
+  #main-sidebar .widget_recent_comments ul li h4 {
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0; }
+  #main-sidebar .widget_recent_comments ul li .author_by {
+    font-size: 1.4rem;
+    color: #777777; }
+#main-sidebar .widget_video {
+  overflow: hidden; }
+  #main-sidebar .widget_video .video_content iframe {
+    width: 100%;
+    height: 180px; }
+#main-sidebar .widget_tag_cloud .tag_cloud a {
+  display: inline-block;
+  float: left;
+  padding: 6px 12px;
+  margin: 2px;
+  border-radius: 2px;
+  background-color: #333333;
+  color: #FFFFFF;
+  transition: all 0.32s ease-in-out; }
+  #main-sidebar .widget_tag_cloud .tag_cloud a:hover, #main-sidebar .widget_tag_cloud .tag_cloud a:active, #main-sidebar .widget_tag_cloud .tag_cloud a:focus {
+    text-decoration: none;
+    background-color: #28C8D6;
+    color: #FFFFFF; }
 
 /* ----------------------------------------------------------------------------
  * Footer Styling
  * -------------------------------------------------------------------------- */
 #main-footer {
   margin-top: 60px;
-  background: #333333;
-  color: #FFFFFF; }
+  background: #0F0F0F;
+  color: #FFFFFF;
+  padding: 30px 0 10px; }
+  #main-footer .widget_footer .widget-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  #main-footer .widget_footer .widget {
+    font-size: 1.5rem; }
+  #main-footer .copyright {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333333; }
+    #main-footer .copyright .text_copyright {
+      float: left; }
+    #main-footer .copyright .btp {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */

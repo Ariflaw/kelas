@@ -109,13 +109,76 @@
       ul {
 
          li {
+            display: block;
+            margin-bottom: 25px;
 
             img {
-               width: 80px;
+               width: 60px;
                height: auto;
+               float: left;
+               margin-right: 10px;
+               border-radius: 100%;
+            }
+
+            h4 {
+               color: $color-3;
+               font-size: 1.5rem;
+               font-weight: 600;
+               margin-top: 0;
+               margin-bottom: 0;
+            }
+
+            .author_by {
+               font-size: 1.4rem;
+               color: $color-7;
             }
 
          }
+      }
+
+   } // .widget_recent_comments
+
+
+   // Widget Video
+   // ======================================================================== /
+   .widget_video {
+      overflow: hidden;
+
+      .video_content {
+
+         iframe {
+            width: 100%;
+            height: 180px;
+         }
+
+      }
+
+   }
+
+
+   // Widget Tag Cloud
+   // ======================================================================== /
+   .widget_tag_cloud {
+
+      .tag_cloud {
+
+         a {
+            display: inline-block;
+            float: left;
+            padding: 6px 12px;
+            margin: 2px;
+            border-radius: 2px;
+            background-color: $color-3;
+            color: $white;
+            transition: all 0.32s ease-in-out;
+
+            &:hover, &:active, &:focus {
+               text-decoration: none;
+               background-color: $primary;
+               color: $white;
+            }
+         }
+
       }
 
    }
